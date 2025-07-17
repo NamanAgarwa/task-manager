@@ -9,7 +9,7 @@ A full-stack task management application with advanced analytics, JWT authentica
 ```
 ddregg/
   Backend/   # Node.js, Express, MongoDB REST API
-  frontend/  # Next.js, Material-UI, modern dashboard UI
+  Frontend/  # Next.js, Material-UI, modern dashboard UI
 ```
 
 ---
@@ -80,11 +80,11 @@ node server.js
 ### 2. Frontend Setup
 
 ```bash
-cd frontend
+cd Frontend
 npm install
 ```
 
-Create a `.env.local` file in `frontend/`:
+Create a `.env.local` file in `Frontend/`:
 
 ```
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
@@ -111,7 +111,7 @@ npm run dev
 ## Folder Structure
 
 - `Backend/` — Express app, routes, controllers, models, middleware, config, docs
-- `frontend/` — Next.js app, pages, components, context, services
+- `Frontend/` — Next.js app, pages, components, context, services
 
 ---
 

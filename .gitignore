@@ -1,42 +1,42 @@
-/frontend/node_modules
-/frontend/.pnp
-/frontend/.pnp.*
-/frontend/.yarn/*
-/frontend/!.yarn/patches
-/frontend/!.yarn/plugins
-/frontend/!.yarn/releases
-/frontend/!.yarn/versions
-/frontend/package-lock.json
-/frontend/.gitignore
+/Frontend/node_modules
+/Frontend/.pnp
+/Frontend/.pnp.*
+/Frontend/.yarn/*
+/Frontend/!.yarn/patches
+/Frontend/!.yarn/plugins
+/Frontend/!.yarn/releases
+/Frontend/!.yarn/versions
+/Frontend/package-lock.json
+/Frontend/.gitignore
 # testing
-/frontend/coverage
+/Frontend/coverage
 
 # next.js
-/frontend/.next/
-/frontend/out/
+/Frontend/.next/
+/Frontend/out/
 
 # production
-/frontend/build
+/Frontend/build
 
 # misc
-/frontend.DS_Store
-/frontend*.pem
+/Frontend.DS_Store
+/Frontend*.pem
 
 # debug
-/frontend/npm-debug.log*
-/frontend/yarn-debug.log*
-/frontend/yarn-error.log*
-/frontend/.pnpm-debug.log*
+/Frontend/npm-debug.log*
+/Frontend/yarn-debug.log*
+/Frontend/yarn-error.log*
+/Frontend/.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-/frontend/.env*
+/Frontend/.env*
 
 # vercel
-/frontend/.vercel
+/Frontend/.vercel
 
 # typescript
-/frontend/*.tsbuildinfo
-/frontend/next-env.d.ts
+/Frontend/*.tsbuildinfo
+/Frontend/next-env.d.ts
 
 
 
