@@ -52,7 +52,6 @@ export default function FilterBar({
   onCreate,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
-  // Debounced search state
   const [searchInput, setSearchInput] = useState(search);
 
   useEffect(() => {
@@ -186,7 +185,6 @@ export default function FilterBar({
         onClose={handleClose}
         anchorOrigin={{ vertical: "bottom", horizontal: "left" }}>
         <Stack spacing={2} p={2} minWidth={260}>
-          {/* Remove search from popover */}
           <FormControl size="small" fullWidth>
             <InputLabel>Status</InputLabel>
             <Select

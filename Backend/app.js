@@ -12,20 +12,15 @@ const swaggerDocument = YAML.load("./swagger.yaml");
 
 const app = express();
 
-// Connect to MongoDB
 connectDB();
 
-// Middleware
 app.use(helmet());
 app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
-// Routes (to be implemented)
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-
-// Error handling middleware (to be implemented)
 
 module.exports = app;

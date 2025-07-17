@@ -102,11 +102,9 @@ exports.deleteTask = async (req, res) => {
   }
 };
 
-// Dashboard analytics: priority distribution, completion rate, upcoming deadlines
 exports.dashboardAnalytics = async (req, res) => {
   try {
     const userId = req.user.id;
-    // Task Distribution by Priority
     const priorityDist = await Task.aggregate([
       {
         $match: {
@@ -115,7 +113,6 @@ exports.dashboardAnalytics = async (req, res) => {
       },
       { $group: { _id: "$priority", count: { $sum: 1 } } },
     ]);
-    // Completion Rate (percentage completed)
     const total = await Task.countDocuments({ user: userId });
     const completed = await Task.countDocuments({
       user: userId,
@@ -123,7 +120,6 @@ exports.dashboardAnalytics = async (req, res) => {
     });
     const completionRate =
       total === 0 ? 0 : Math.round((completed / total) * 100);
-    // Upcoming Deadlines (next 7 days)
     const now = new Date();
     const week = new Date();
     week.setDate(now.getDate() + 7);
