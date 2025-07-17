@@ -1,0 +1,82 @@
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/*
+/frontend/!.yarn/patches
+/frontend/!.yarn/plugins
+/frontend/!.yarn/releases
+/frontend/!.yarn/versions
+/frontend/package-lock.json
+/frontend/.gitignore
+# testing
+/frontend/coverage
+
+# next.js
+/frontend/.next/
+/frontend/out/
+
+# production
+/frontend/build
+
+# misc
+/frontend.DS_Store
+/frontend*.pem
+
+# debug
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+/frontend/.env*
+
+# vercel
+/frontend/.vercel
+
+# typescript
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
+
+
+
+
+/Backend/node_modules
+/Backend/.pnp
+/Backend/.pnp.*
+/Backend/.yarn/*
+/Backend/!.yarn/patches
+/Backend/!.yarn/plugins
+/Backend/!.yarn/releases
+/Backend/!.yarn/versions
+/Backend/package-lock.json
+/Backend/.gitignore
+# testing
+/Backend/coverage
+
+# next.js
+/Backend/.next/
+/Backend/out/
+
+# production
+/Backend/build
+
+# misc
+/Backend/.DS_Store
+/Backend/*.pem
+
+# debug
+/Backend/npm-debug.log*
+/Backend/yarn-debug.log*
+/Backend/yarn-error.log*
+/Backend/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+/Backend/.env*
+
+# vercel
+/Backend/.vercel
+
+# typescript
+/Backend/*.tsbuildinfo
+/Backend/next-env.d.ts
